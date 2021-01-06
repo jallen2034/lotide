@@ -5,6 +5,7 @@
 // otherwise if it loops through all the way, return isMatching as true
 const assertEqual = function(resultArr, expectedArr) {
   let isMatching = true;
+
   for (let i = 0; i < expectedArr.length; i++) {
     if (resultArr[i] !== expectedArr[i]) {
       isMatching = false;
