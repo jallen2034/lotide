@@ -19,7 +19,7 @@ const middle = function(array) {
     middleArr.push(array[oddMiddle]);
   }
   return middleArr;
-}
+};
 
 // function to see if the return value from eqArrays() and "true" match
 const assertArraysEqual = function (arr1, arr2) {

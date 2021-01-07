@@ -34,7 +34,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-
 // array of first names we want to compare against our object of names we pass in
 const firstNames = [
   "Karl",
