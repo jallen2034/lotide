@@ -1,12 +1,3 @@
-// assert equal function implemntation
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅🥴💯 Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🥺💀 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 // function to take in a string as it main paramater
 // create empty returnObj{} we will eventually push new key value pairs to
 // loop through the string char by char, check if the char at i !== " "
