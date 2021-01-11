@@ -14,7 +14,7 @@ const eqArrays = function(arr1, arr2) {
 
 // function to see if the return value from eqArrays() and "true" match
 const assertEqual = function(actual, expected) {
-  const inspect = require('util').inspect; // <= add this line
+  const inspect = require('util').inspect; 
   const result = eqArrays(actual, expected);
 
   if (result) {
@@ -25,7 +25,7 @@ const assertEqual = function(actual, expected) {
 };
 
 // collection of words
-// Let's define map in a minimal way in order to fix the error.
+// let's define map in a minimal way in order to fix the error.
 const words = ["ground", "control", "to", "major", "tom"];
 const map = function(array, callback) {
   const results = [];
@@ -40,5 +40,3 @@ const map = function(array, callback) {
 assertEqual(map(words, function(wordItem) {return wordItem[0]}), [ 'g', 'c', 't', 'm', 't' ]); 
 assertEqual(map(words, function(wordItem) {return wordItem[0]}), [ 'g', 'c', 't', 'c', 'r' ]);
 assertEqual(map(words, function(wordItem) {return wordItem[0]}), [ 'g', 'c', 't', 'c', 'r' ]);
-
-

@@ -13,6 +13,7 @@ const assertEqual = function(actual, expected) {
 const findKeyByValue = function(bestTVShowObj, valToSearch) {
   const keys = Object.keys(bestTVShowObj);
   console.log(keys);
+  
   for (key of keys){
     if (bestTVShowObj[key] === valToSearch) {
       return key;
