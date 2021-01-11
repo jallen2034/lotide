@@ -1,14 +1,7 @@
 // modules to import
 const assertEqual = require('../assertEqual');
 const eqArrays = require('../eqArrays');
-const head = require('../head');
 const tail = require('../tail');
-
-// test code for head.js 
-// assertEqual(head([5,6,7]), 5);
-// assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-// assertEqual(head([6]), 5);
-// assertEqual(head([]), 5);
 
 // test and use function for tail.js
 const tail1 = tail(["Hello", "Lighthouse", "Labs"]); // after running tail() ["Lighthouse", "Labs"]
@@ -19,9 +12,3 @@ assertEqual(eqArrays(tail1, ["Lighthouse", "Ladbs"]), false); // should return f
 assertEqual(eqArrays(tail1, ["yeeyee", "Labs"]), false); // should return false, tail1 and ["yeeyee", "Labs"] doesn't match
 assertEqual(eqArrays(tail2, ["Lighthouse", "Labs"]), false); // should return false, tail2 and ["Lighthouse", "Labs"] doesn't match
 assertEqual(eqArrays(tail3, ["Lighthouse", "Labs"]), false); // should return false, tail3 and ["Lighthouse", "Labs"] doesn't match
-
-// test and use functions for eqArrays.js
-// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-// assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
