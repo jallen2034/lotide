@@ -11,17 +11,4 @@ const eqArrays = function(arr1, arr2) {
   return isMatching;
 };
 
-// function to see if the return value from eqArrays() and "true" match
-const assertEqual = function (actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑🥺😞 Assertion Failed: ${actual} !== ${expected}`);
-  } else if (actual === expected) {
-    console.log(`✅🥴💯 Assertion Passed: ${actual} === ${expected}`);
-  }
-};
-
-// test and use functions
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
+module.exports = eqArrays;
