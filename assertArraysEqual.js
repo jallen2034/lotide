@@ -1,3 +1,4 @@
+// import needed modules
 const eqArrays = require('./eqArrays');
 
 // function to see if the return value from eqArrays() and "true" match

@@ -3,4 +3,5 @@ const head = function(actualArr) {
   return actualArr[0];
 }
 
+// exports
 module.exports = head;

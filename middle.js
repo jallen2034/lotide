@@ -21,31 +21,5 @@ const middle = function(array) {
   return middleArr;
 };
 
-// function to see if the return value from eqArrays() and "true" match
-const assertArraysEqual = function (arr1, arr2) {
-  const returnBool = eqArrays(arr1, arr2);
-  if (returnBool) {
-    console.log(`✅🥴💯 Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🥺😞 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
-// function to check if any indexes of both arrays dont match at all
-const eqArrays = function(arr1, arr2) {
-  let isMatching = true;
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      isMatching = false;
-      return isMatching;
-    }
-  }
-  return isMatching;
-};
-
-// tests
-assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3]); // => [3, 4]
+// export needed modules
+module.exports = middle;
