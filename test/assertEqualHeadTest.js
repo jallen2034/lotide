@@ -1,6 +1,6 @@
 // new mocha and chai test code
 const assert = require('chai').assert;
-const head   = require('../head');
+const {head} = require('../index');
 
 describe("head() function: \n", () => {
   it("returns 1 for [1, 2, 3]", () => {

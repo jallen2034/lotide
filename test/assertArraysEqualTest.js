@@ -1,6 +1,6 @@
 // modules to import
 const assert = require('chai').assert;
-const assertArraysEqual = require('../assertArraysEqual');
+const {assertArraysEqual} = require('../index');
 
 // mocha/chai test 
 describe("assertArraysEqual() function: \n", () => {

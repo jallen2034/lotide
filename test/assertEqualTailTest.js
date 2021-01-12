@@ -1,6 +1,5 @@
 const assert = require('chai').assert;
-const eqArrays = require('../eqArrays');
-const tail = require('../tail');
+const {tail, eqArrays} = require('../index');
 
 const tail1 = tail(["Hello", "Lighthouse", "Labs"]); // after running tail() ["Lighthouse", "Labs"]
 const tail2 = tail(["Lighthouse"]); // after running tail() ["Lighthouse"]

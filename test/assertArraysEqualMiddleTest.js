@@ -1,7 +1,6 @@
 // import modules
 const assert = require('chai').assert;
-const assertArraysEqual = require('../assertArraysEqual');
-const middle = require('../middle');
+const {middle, assertArraysEqual} = require('../index');
 
 // mocha/chai test 
 describe("middletest() function: \n", () => {
