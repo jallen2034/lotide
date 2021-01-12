@@ -4,7 +4,7 @@ const assertArraysEqual = require('../assertArraysEqual');
 const middle = require('../middle');
 
 // mocha/chai test 
-describe("eqArrays() function: \n", () => {
+describe("middletest() function: \n", () => {
   it("Middle index found: Returns true, indicating: [2] is the middle of [1, 2, 3])", () => {
     assert.isTrue(assertArraysEqual(middle([1, 2, 3]), [2]));
   });

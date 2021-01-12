@@ -7,7 +7,7 @@ const tail2 = tail(["Lighthouse"]); // after running tail() ["Lighthouse"]
 const tail3 = tail([]); // after running tail() []
 
 // mocha/chai test 
-describe("eqArrays() function: \n", () => {
+describe("tailtest() function: \n", () => {
   it("returns true when arrays: tail1[] and ['Lighthouse', 'Labs'] do match", () => {
     assert.strictEqual(eqArrays(tail1, ["Lighthouse", "Labs"]), true);
   });
