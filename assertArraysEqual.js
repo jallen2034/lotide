@@ -7,18 +7,8 @@ const eqArrays = require('./eqArrays');
 // otherwise say they dont
 const assertArraysEqual = function (arr1, arr2) {
   const returnBool = eqArrays(arr1, arr2);
-  if (returnBool) {
-    console.log(`✅🥴💯 Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🥺😞 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
+  return returnBool;
 };
-
-// test and use functions
-// assertArraysEqual([1, 2, 3], [1, 2, 3]);
-// assertArraysEqual([1, 2, 3], [3, 2, 1]);
-// assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]);
-// assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
 
 // export eqArrays() to be used in a different module elsewhere
 module.exports = assertArraysEqual;

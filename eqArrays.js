@@ -2,10 +2,13 @@
 const eqArrays = function(arr1, arr2) {
   let isMatching = true;
 
+  if (arr1.length === 0) {
+    return false;
+  }  
+
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
-      isMatching = false;
-      return isMatching;
+      return false;
     }
   }
   return isMatching;
